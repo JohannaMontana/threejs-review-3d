@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="stylesheet" rel="stylesheet" href="css/style.css">
+    <title>Examen 3D</title>
+  </head>
+  <body>
+    <div id="info">
+			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - orbit controls
+		</div>
+
+        <!-- Importa la estructura del proyecto three js-->
+		<script type="importmap"> 
+			{
+				"imports": {
+					"three": "./build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+    <div id="app"></div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
